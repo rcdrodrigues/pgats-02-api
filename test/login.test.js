@@ -33,8 +33,8 @@ describe ('Login', () => {
                 .set('Content-Type', 'application/json')
                 .send(bodyLoginInvalido);
 
-            console.log(resposta.status) 
-            console.log(resposta.body)
+            //console.log(resposta.status) 
+            //console.log(resposta.body)
 
                 expect(resposta.status).to.equal(400);
                 expect(resposta.body).to.have.property('error');
